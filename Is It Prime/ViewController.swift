@@ -41,7 +41,17 @@ class ViewController: UIViewController {
             
         }
         
+        if isPrime == true && number > 1 {
         responseLabel.text = "\(textField.text!) is a prime number!"
+        }
+        else if isPrime == false || number == 0 {
+        responseLabel.text = "\(textField.text!) is NOT a prime number!"
+        }
+        else {
+        responseLabel.text = "Please enter a positive integer."
+        }
+
+        
         
         
     }
