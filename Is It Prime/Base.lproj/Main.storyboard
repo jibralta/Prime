@@ -16,55 +16,59 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is It Prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fed-SX-NS2">
-                                <frame key="frameInset" minX="34" minY="38" width="253" height="67"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-iP-fIt">
+                                <state key="normal" title="Is It Prime"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a positive integer" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2XH-x8-Yf6">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIp-lT-dPJ">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="176" id="dcJ-sw-JDG"/>
-                                    <constraint firstAttribute="height" constant="21" id="h69-mq-1Mc"/>
+                                    <constraint firstAttribute="height" constant="48" id="FFK-5f-a7f"/>
+                                    <constraint firstAttribute="width" constant="165" id="xdE-UR-CWw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
-                                <color key="textColor" red="0.94901960784313721" green="0.0" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.0" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-iP-fIt">
-                                <frame key="frameInset" minX="122" minY="153" width="76" height="30"/>
-                                <state key="normal" title="Is It Prime?"/>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a positive integer" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2XH-x8-Yf6">
-                                <frame key="frameInset" minX="16" minY="106" width="288" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iec-zj-diS">
-                                <frame key="frameInset" minY="207" width="320" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iec-zj-diS">
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="primes.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="94O-R5-FA9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="DSO-gC-2CK"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="9Ok-iP-fIt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9q7-uG-p0P"/>
-                            <constraint firstItem="Iec-zj-diS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="1" id="AjP-ns-BHB"/>
-                            <constraint firstItem="9Ok-iP-fIt" firstAttribute="top" secondItem="2XH-x8-Yf6" secondAttribute="bottom" constant="17" id="Jp1-R3-w5Q"/>
-                            <constraint firstItem="2XH-x8-Yf6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O7j-rw-zH7"/>
-                            <constraint firstItem="2XH-x8-Yf6" firstAttribute="top" secondItem="Fed-SX-NS2" secondAttribute="bottom" constant="1" id="aBj-Oj-ZW5"/>
-                            <constraint firstItem="Fed-SX-NS2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="aHE-bY-Gdp"/>
-                            <constraint firstItem="Iec-zj-diS" firstAttribute="top" secondItem="9Ok-iP-fIt" secondAttribute="bottom" constant="24" id="cEZ-tj-XDc"/>
-                            <constraint firstItem="Fed-SX-NS2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dSR-8Q-fa0"/>
-                            <constraint firstItem="2XH-x8-Yf6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dz9-Qd-ZHO"/>
-                            <constraint firstAttribute="trailing" secondItem="Iec-zj-diS" secondAttribute="trailing" constant="-1" id="fOr-2O-hFz"/>
-                            <constraint firstItem="Iec-zj-diS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gtB-XO-rU3"/>
-                            <constraint firstItem="2XH-x8-Yf6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kP7-0a-nXu"/>
-                            <constraint firstItem="2XH-x8-Yf6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="nOh-mQ-Ozf"/>
+                            <constraint firstItem="2XH-x8-Yf6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5T5-i7-1XS"/>
+                            <constraint firstItem="Iec-zj-diS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5vr-wY-zfQ"/>
+                            <constraint firstItem="Iec-zj-diS" firstAttribute="top" secondItem="9Ok-iP-fIt" secondAttribute="bottom" constant="8" id="605-5v-k3u"/>
+                            <constraint firstItem="94O-R5-FA9" firstAttribute="top" secondItem="Iec-zj-diS" secondAttribute="bottom" constant="49" id="8Um-Ps-rAK"/>
+                            <constraint firstItem="2XH-x8-Yf6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OC6-y3-ty2"/>
+                            <constraint firstItem="9Ok-iP-fIt" firstAttribute="top" secondItem="2XH-x8-Yf6" secondAttribute="bottom" constant="8" id="Qud-ji-e2J"/>
+                            <constraint firstItem="2XH-x8-Yf6" firstAttribute="top" secondItem="dIp-lT-dPJ" secondAttribute="bottom" constant="14" id="S22-Za-Gzw"/>
+                            <constraint firstItem="dIp-lT-dPJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SWP-gX-3G6"/>
+                            <constraint firstItem="dIp-lT-dPJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="Zc1-a9-sRc"/>
+                            <constraint firstItem="9Ok-iP-fIt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fER-vu-Vke"/>
+                            <constraint firstItem="94O-R5-FA9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jdF-Mn-7wB"/>
+                            <constraint firstItem="2XH-x8-Yf6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="n3i-Eh-oSz"/>
+                            <constraint firstItem="94O-R5-FA9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="rnS-Ed-lYi"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71" y="245"/>
+            <point key="canvasLocation" x="-71.25" y="243.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="primes.jpg" width="1696" height="1696"/>
+    </resources>
 </document>
