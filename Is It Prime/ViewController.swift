@@ -10,6 +10,43 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var textField: UITextField!
+    @IBOutlet var responseLabel: UILabel!
+
+    
+    
+    @IBAction func submitButtonTapped(_ sender: AnyObject) {
+        
+        var number = Int(textField.text!)
+        
+        var isPrime = true
+        
+        if number == 1 {
+            
+            isPrime = false
+            
+        }
+        
+        var i = 2
+        
+        while i < number {
+            
+            if number! % i == 0 {
+                
+                isPrime = false
+                
+            }
+            
+            i += 1
+            
+        }
+        
+        responseLabel.text = "\(textField.text!) is a prime number!"
+        
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

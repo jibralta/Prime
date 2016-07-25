@@ -16,11 +16,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ok-iP-fIt">
-                                <state key="normal" title="Is It Prime"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KtB-0R-gRT"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a positive integer" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2XH-x8-Yf6">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -46,6 +49,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2XH-x8-Yf6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5T5-i7-1XS"/>
                             <constraint firstItem="Iec-zj-diS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5vr-wY-zfQ"/>
@@ -62,6 +66,10 @@
                             <constraint firstItem="94O-R5-FA9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="rnS-Ed-lYi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="responseLabel" destination="Iec-zj-diS" id="FFZ-Ce-D3R"/>
+                        <outlet property="textField" destination="2XH-x8-Yf6" id="6K9-d2-aTg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
